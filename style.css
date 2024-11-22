@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container .left-side{
+    position: relative;
+    background-color: rgb(1,33,34);
+    padding: 40px;
+}
+.headingText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.headingText .candidateImg {
+    /*position: relative;
+    width: 200px;
+    height: 200px;
+    
+    overflow:hidden;*/
+}
+.headingText .candidateImg img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    object-fit: cover;
+}
+.headingText h2{
+    color: antiquewhite;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 10px;
+}
+.headingText h2 span{
+    color: aquamarine;
+    font-size: 0.9em;
+
+}
+
+
+/* Css for contact information */
+
+.contactInfo {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 25px;
+    font-size: 15px;
+    color: burlywood;
+    cursor: pointer;
+}
+.contactInfo ul li .span{
+    color: aliceblue;
+    font-weight: bold;
+    
+}
+
+
+/*CSS for Educational details */
+
+.contactInfo.Education h5{
+    color: lightblue;
+    font-weight: 400;
+}
+.contactInfo.Education h4:nth-child(2){
+    color: aliceblue;
+    font-weight: 300;
+}
+.contactInfo.Education  h4{
+    color: white;
+    font-weight: 200;
+}
+
+
+/* css For Sysnopsis */
+
+.about {
+    margin-bottom: 10px;
+
+}
+.about:last-child{
+    margin-bottom: 6px;
+}
+
+.synopsis {
+    color: green;
+    letter-spacing: 1px;
+    margin: 10px;
+
+}
+p{
+    text-align: center;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/*CSS for Experience */
+.about .experience{
+    color: navy;
+    margin: 10px;
+
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.about .box .exp_year {
+    min-height: 150px;
+}
+.about .box .exp_year h5 {
+    text-transform: uppercase;
+    color:chocolate;
+    font-weight: 500;
+}
+.about .box .text h4 {
+    text-transform: uppercase;
+    color:chocolate;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p.pg-dac{
+    font-size: 18px;
+}
+
+
+/* CSS for Technical Skills */
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: rgb(12, 4, 58);
+    font-weight: 600;
+
+}
+
+.skills .box .percentage {
+    position: relative;
+    width: 95%;
+    height: 10px;
+    background-color: rgb(1, 26, 24);
+}
+
+.skills .box .percentage div{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: gray;
+}
